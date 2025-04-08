@@ -368,7 +368,7 @@ class ApiTokenService extends Component
             }
         }
 
-        return (array) JWT::decode($jwtToken, $secretKey, [$this->alg]);
+        return (array) JWT::decode($jwtToken, new Key($secretKey, $this->alg));
     }
 
     /**
