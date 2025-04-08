@@ -10,6 +10,7 @@ namespace Kakadu\Yii2JwtAuth;
 
 use Firebase\JWT\ExpiredException;
 use Firebase\JWT\JWT;
+use Firebase\JWT\Key;
 use UnexpectedValueException;
 use Yii;
 use yii\base\Component;
